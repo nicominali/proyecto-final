@@ -1,0 +1,46 @@
+a {
+  color: black; }
+
+body {
+  text-align: center; }
+
+.botonBack {
+  text-align: left; }
+
+img {
+  padding: 10px; }
+
+.prevan {
+  padding: 0;
+  margin: 0; }
+
+.Left {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  padding: 900px; }
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+.textFotoPortada {
+  background-color: white;
+  opacity: 0.7;
+  color: black;
+  font-size: 35px; }
+
+.prenav {
+  font-size: 12px; }
+
+.zoom:hover {
+  transform: scale(1.1); }
+
+.header {
+  color: white;
+  background-color: #3d3e40;
+  text-decoration: none; }
+
+li {
+  list-style-type: none;
+  padding-left: 15px;
+  text-align: left; }
