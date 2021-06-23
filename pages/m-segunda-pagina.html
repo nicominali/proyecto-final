@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ropa Shop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/style.css">
 </head> 
 <body>
@@ -18,7 +19,7 @@
             </div>
         </div>
     </div>
-    <div class="container">     
+    <div class="container-fluid">     
         <div class="row">
             <div class="col-lg-12 col-xs-12">    
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -59,20 +60,21 @@
             </div>    
         </div><br>
         <!--barra secciones-->      
-    <div class="conteiner">
-        <div class="row">
-            <div class="col-lg-6 col-xs-12">
-                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group me-2" role="group" aria-label="First group">
-                      <button type="button" class="btn btn-primary"><a class="boton" href="subpages/M-remeras.html">Remeras</button></a>
-                      <button type="button" class="btn btn-primary">pantalones</button>
-                      <button type="button" class="btn btn-primary">Abrigos</button>
-                      <button type="button" class="btn btn-primary">Conjuntos</button>
-                    </div>
+        <div class="conteiner secciones">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                          <button type="button" class="btn btn-primary"><a class="boton" href="subpages/M-remeras.html">Remeras</button></a>
+                          <button type="button" class="btn btn-primary"><a class="boton" href="subpages/M-pantalones.html">pantalones</button></a>
+                          <button type="button" class="btn btn-primary"><a class="boton" href="subpages/M-abrigos.html">Abrigos</button></a>
+                          <button type="button" class="btn btn-primary"><a class="boton" href="subpages/M-conjutos.html">Conjuntos</button></a>
+                          <button type="button" class="btn btn-primary"><a class="boton" href="subpages/M-vestidos.html">Vestidos</button></a>
+                        </div>
+                    </div>    
                 </div>    
-            </div>    
+            </div>
         </div>
-    </div>
     <!--barra 123-->
     <div>
         <ul class="pagination justify-content-end">
@@ -82,7 +84,7 @@
             <li class="page-item"><a class="page-link" href="m-segunda-pagina.html">Next</a></li>
           </ul>
     </div>
-    <section class="container separacion">
+    <section class="container separacion" data-aos="fade-right">
         <div class="row">
             <div class="col-lg-4 col-xs-12">
                 <div class="zoom">
@@ -98,7 +100,7 @@
                 <div>camison a rallas</div>
                 </div><br>
                 <div class="zoom">
-                <img  src="../assets/imganes-productos/remeras-seis.jpg" alt="remera-seis" width="350px" height="350px">
+                <img src="../assets/imganes-productos/remeras-seis.jpg" alt="remera-seis" width="350px" height="350px">
                 <div>tops a rallas</div>
                 </div>  
             </div>
@@ -164,7 +166,11 @@
                 </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
 </html>

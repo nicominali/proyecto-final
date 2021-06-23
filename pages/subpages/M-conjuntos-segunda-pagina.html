@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ropa Shop</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../../css/style.css">
 </head> 
 <body>
@@ -18,7 +19,7 @@
             </div>
         </div>
     </div>
-    <div class="container">     
+    <div class="container-fluidgit">     
         <div class="row">
             <div class="col-lg-12 col-xs-12">    
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -68,9 +69,10 @@
               </ul>
         </div><br>
         <!--fotos-->
-        <section class="container separacion">
+        <section class="container separacion"  data-aos="fade-right">
             <div class="row">
                 <div class="col-lg-4 col-xs-12">
+                  <div class="zoom">  
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -97,12 +99,15 @@
                           <span class="sr-only">Next</span>
                         </a>
                       </div>
+                  </div><br>
+                  <div>conjuto</div>
                 </div>
                  <div class="col-lg-4 col-xs-12">
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                  <div class="zoom">  
+                  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img  src="../../assets/M-conjutos/conjunto-siete-a.jpg" class="d-block w-100 zoom" alt="primera foto">
+                            <img  src="../../assets/M-conjutos/conjunto-siete-a.jpg" class="d-block w-100" alt="primera foto">
                           </div>
                           <div class="carousel-item">
                             <img  src="../../assets/M-conjutos/conjunto-siete-b.jpg" class="d-block w-100" alt="segunda foto">
@@ -120,9 +125,14 @@
                           <span class="sr-only">Next</span>
                         </a>
                       </div>
+                </div><br>
+                <div>conjunto bulls</div>
                 </div>
                 <div class="col-lg-4 col-xs-12">
-                    <img class="zoom" src="../../assets/M-conjutos/conjuto-tres.jpg" alt="conjuto-tres" width="350px" height="350px">
+                  <div class="zoom"> 
+                  <img src="../../assets/M-conjutos/conjuto-tres.jpg" alt="conjuto-tres" width="350px" height="350px">
+                  <div>conjunto dos</div>
+                  </div>
                 </div>
             </div>
         </section><br>
@@ -150,7 +160,11 @@
                 </div>
         </div>
     </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     </body>
     </html>

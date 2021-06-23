@@ -20,6 +20,22 @@ img {
   text-align: left;
   padding: 900px; }
 
+/*.aver{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left:0px;
+    margin-right:0px;
+}*/
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+  padding-right: 0px;
+  padding-left: 0px; }
+
+.img {
+  padding: 0px; }
+
+.secciones {
+  margin-left: 70px; }
+
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
