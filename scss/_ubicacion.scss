@@ -36,3 +36,16 @@ img {
     margin-left: 70px;
 
 }
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+.ajuste{
+    padding: 0px;
+}
+.ofertas{
+    padding: 25px;
+}
