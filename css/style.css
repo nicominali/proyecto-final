@@ -145,3 +145,19 @@ li {
   list-style-type: none;
   padding-left: 15px;
   text-align: left; }
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 10px 0px 6px #52517d; }
+  .logo {
+    text-align: center; }
+  .carruselMovai {
+    width: 100%;
+    height: 500px; }
+  .movaiMapa {
+    padding-top: 250px; }
+  .movaiOfertas {
+    display: flex;
+    flex-direction: row; } }
