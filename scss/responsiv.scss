@@ -18,7 +18,11 @@
     
     }
     .movaiOfertas{
-        display: flex;
-        flex-direction:row;
+        display: grid;
+        grid-column: auto;
+    }
+    .movai{
+        display: grid;
+        
     }
 }

@@ -19,22 +19,12 @@ body {
 img {
   padding: 10px; }
 
-.prevan {
-  padding: 0;
-  margin: 0; }
-
 .Left {
   display: flex;
   flex-direction: row;
   text-align: left;
   padding: 900px; }
 
-/*.aver{
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left:0px;
-    margin-right:0px;
-}*/
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
   padding-right: 0px;
   padding-left: 0px; }
@@ -85,9 +75,6 @@ body {
   color: black;
   font-size: 35px; }
 
-.prenav {
-  font-size: 12px; }
-
 .letra {
   font-size: 120px;
   font-family: 'Nunito', sans-serif; }
@@ -136,11 +123,6 @@ h1 {
   color: white;
   transform: rotateY(180deg); }
 
-.header {
-  color: white;
-  background-color: #3d3e40;
-  text-decoration: none; }
-
 li {
   list-style-type: none;
   padding-left: 15px;
@@ -159,5 +141,7 @@ li {
   .movaiMapa {
     padding-top: 250px; }
   .movaiOfertas {
-    display: flex;
-    flex-direction: row; } }
+    display: grid;
+    grid-column: auto; }
+  .movai {
+    display: grid; } }
