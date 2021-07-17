@@ -59,3 +59,46 @@ h1{
     font-size: 80px;
 
 }
+.caja .form{
+width: 90%;
+max-width: 650px;
+margin: auto;
+padding: 5px,35px;
+margin-top: 30px;
+padding-bottom: 30px;
+border-radius: 3px;
+}
+.caja .form .form-label{
+    display: block;
+    font-size: 16px;
+    position: relative;
+}
+.caja .form .form-input, .form-textarea{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid red;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+}
+.caja .form .form-textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+.contenedor .form .botonEnviar{
+    width: 100%;
+    outline: none;
+    background-color: red;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    padding: 15px 0px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.contenedor .form .botonEnviar:hover{
+    background-color: rgb(255, 42, 42);
+}
