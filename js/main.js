@@ -18,3 +18,6 @@ console.table(carrito)
 
 carrito.push(productoMujeres)
 console.table(carrito)
+
+console.log(document.getElementsByClassName("container"))
+console.log(document.getElementsByTagName("h1"))
