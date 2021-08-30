@@ -119,6 +119,10 @@ h1 {
 .contenedor .form .botonEnviar:hover {
   background-color: #ff2a2a; }
 
+.estrella {
+  margin-left: 200px;
+  margin-bottom: -19px; }
+
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
