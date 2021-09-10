@@ -121,7 +121,13 @@ h1 {
 
 .estrella {
   margin-left: 200px;
-  margin-bottom: -19px; }
+  margin-bottom: -19px;
+  height: 45px;
+  width: 45px; }
+
+.fotosRopa {
+  width: 350px;
+  height: 350px; }
 
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }

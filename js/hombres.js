@@ -61,9 +61,9 @@ const ropas = [
   },
 
 ]
-const estrella = document.querySelector(".estrella");
+//const estrella = document.querySelector(".estrella");
 
-const contenedorRopa = document.querySelector(".container-ropa")
+const contenedorRopa = document.querySelector(".container-ropa");
 
 document.addEventListener('DOMContentLoaded',() => {
     
@@ -72,24 +72,31 @@ document.addEventListener('DOMContentLoaded',() => {
 
 function mostrarRopas(){
     ropas.forEach((ropa) => {
-        
-        const div = document.querySelector(".zoom");
-        const favorito = document.querySelector(".estrella");
-        const img = document.querySelector(".imgRopa") 
-        const texto = document.querySelector(".textoFoto")       
-        
-        favorito.onclick = () =>{
-            agregarAFavorito(ropas.id);
-        }
+      
+      const div = document.createElement("div");
+      div.classList.add("zoom");
+     
+      const imagen = document.createElement("img");
+      imagen.src = ropa.img
+      imagen.classList.add ("fotosRopa");
+      
+      const nombre = document.createElement("h3")
+     // nombreRopa.classList.add("nombre-ropa")
+      nombre.textContent = ropa.name
 
-        /*div.appendChild(".estrella");
-        div.appendChild(".imgRopa");
-        div.appendChild(".textoFoto");*/
+      const favoritos = document.createElement("img");
+      favoritos.src ="../assets/img/estrella-off.png"
+      favoritos.classList.add ("estrella");
 
-
-        //console.log(ropa.img);
+      div.appendChild(imagen);
+      div.appendChild(nombre);
+      div.appendChild(favoritos)
+    
+     contenedorRopa.appendChild(div); 
+      
     })
 }
+/*
 function agregarAFavorito(id){
     const ropaFavorita = ropas.find (ropa => {
         return ropa.id === id
@@ -101,4 +108,4 @@ function encender(){
 }
 function apagar(){
     document.querySelector("img").src ="../assets/img/estrella-off.png";
-}
+}*/
