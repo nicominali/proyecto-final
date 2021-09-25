@@ -73,53 +73,30 @@ document.addEventListener('DOMContentLoaded',() => {
 })
 
 function mostrarRopas(){
-    ropas.forEach((ropa) => {
-      
-      /*const div = document.createElement("div");
-      div.classList.add("zoom");
      
-      const imagen = document.createElement("img");
-      imagen.src = ropa.img
-      imagen.classList.add ("fotosRopa");
-      
-      const nombre = document.createElement("h3")
-     // nombreRopa.classList.add("nombre-ropa")
-      nombre.textContent = ropa.name
-
-      const favoritos = document.createElement("button");
-      favoritos.src ="../assets/img/estrella-off.png"
-      favoritos.classList.add ("estrella");
-      favoritos.onclick = () => {
-        agregarAFavorito(ropa.id);
-      };
-
-      div.appendChild(imagen);
-      div.appendChild(nombre);
-      div.appendChild(favoritos)
-    
-     contenedorRopa.appendChild(div); */
-     
-     contenedorRopa.innerHTML += `
+    contenedorRopa.innerHTML += `
      <section class="container-ropa" data-aos="fade-right">
         <div class="row">
             <div class="col-lg-4 col-xs-12">
-               <div class="zoom">
+            <button onclick="agregarAFavorito(ropas[0].id)">Agregar a favoritos</button>
+               <div class="zoom" id="ropas[0].id">
                 <img class="estrella" src="../assets/img/estrella-off.png" alt="estrella-off" width="45px" height="45px" onclick="encender()"ondblclick="apagar()">
                 <img class="imgRopa" src="../assets/imagenes-productos-H/buzo-cinco.jpeg" alt="buzo-cinco" width="350px" height="350px">
                <div class="textoFoto"> Buzo deportivo</div>
                <div class="textoFoto">la secleccion</div>
                </div><br>
-               <div class="zoom">
+               <button onclick="agregarAFavorito(ropas[1].id)">Agregar a favoritos</button>
+               <div class="zoom" id="ropas[1].id">
                 <img class="estrella" src="../assets/img/estrella-off.png" alt="estrella-off" width="45px" height="45px" onclick="encender()"ondblclick="apagar()">
                 <img class="imgRopa" src="../assets/imagenes-productos-H/buzo-tres.jpeg" alt="buzo-tres" width="350px" height="350px">
                 <div class="textoFoto">buzo brazos militares</div>
                </div><br>
-               <div class="zoom">
+               <div class="zoom" id="ropas[2].id">
                 <img class="estrella" src="../assets/img/estrella-off.png" alt="estrella-off" width="45px" height="45px" onclick="encender()"ondblclick="apagar()">
                 <img  src="../assets/imagenes-productos-H/conjunto-cuatro.jpeg" alt="conjuto-cuatro" width="350px" height="350px">
                 <div>conjunto deportivo negro</div>
                </div><br>
-               <div class="zoom">
+               <div class="zoom" id="4">
                 <img class="estrella" src="../assets/img/estrella-off.png" alt="estrella-off" width="45px" height="45px"> 
                <img src="../assets/imagenes-productos-H/pantalon-seis.jpeg" alt="pantalon-seis" width="350px" height="350px">
                <div>pantalon cargo</div>
@@ -127,11 +104,12 @@ function mostrarRopas(){
                </div>
             </div>
             <div class="col-lg-4 col-xs-12">
-                <div class="zoom">
+                <div class="zoom" id="0">
                 <img class="estrella" src="../assets/img/estrella-off.png" alt="estrella-off" width="45px" height="45px">
                 <img src="../assets/imagenes-productos-H/remera-cuatro.jpeg" alt="remera-cuatro" width="350px" height="350px">
                 <div>remera con estampa</div>
-                </div><br>
+                </div>
+                <br>
                 <div class="zoom">
                 <img class="estrella" src="../assets/img/estrella-off.png" alt="estrella-off" width="45px" height="45px">
                 <img src="../assets/imagenes-productos-H/remera-uno.jpeg" alt="remera-uno" width="350px" height="350px">
@@ -143,7 +121,7 @@ function mostrarRopas(){
                 <div>remera lisa blanca</div>
                 </div><br>
                 <div class="zoom">
-                <img class="estrella" src="../assets/img/estrella-off.png" alt="estrella-off" width="45px" height="45px">
+                <img  class="estrella" src="../assets/img/estrella-off.png" alt="estrella-off" width="45px" height="45px">
                 <img  src="../assets/imagenes-productos-H/remera-siete.jpeg" alt="remera-siete" width="350px" height="350px">
                 <div>remera advisory</div>
                 </div><br>  
@@ -168,23 +146,31 @@ function mostrarRopas(){
                 <img class="estrella" src="../assets/img/estrella-off.png" alt="estrella-off" width="45px" height="45px"> 
                 <img src="../assets/imagenes-productos-H/buzo-doce.jpeg" alt="buzo-doce" width="350px" height="350px">
                 <div>buzo negro jordan</div>
-                </div><br>
+                </div>
+                <br>
+                </br>
+                
             </div>
         </div>  
-    </section><br></br>`
-    
+    </section>
+    <br></br>
+    `
     //contenedorRopa.appendChild()
     
-    })
+   
 }
 
 function agregarAFavorito(id){
-    const ropaFavorita = ropas.find (ropa => {
-        return ropa.id === id;
-    })
-    ropasFavoritas.push(ropaFavorita)
-    console.log(ropasFavoritas);
-  }
+const ropaFavorita = ropas.find(ropa => {
+    return ropa.id === id;
+})
+  ropasFavoritas.push(ropaFavorita)
+  const filterArray = ropasFavoritas.filter(function(ele , pos){
+    return ropasFavoritas.indexOf(ele) == pos;
+}) 
+  console.log(filterArray)
+  
+}
 /*function encender(){
     document.querySelector("img").src ="../assets/img/estrella-on.png";
 }
