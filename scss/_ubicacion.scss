@@ -1,5 +1,15 @@
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+    width:auto ;
+}
 body{
     text-align: center;
+    background:#f1f1f1;
+    transition: .3s ease all;
+    &.dark{
+        background: #000;
+    }
 }
 .botonBack{
     text-align:left ;
@@ -15,10 +25,6 @@ img {
     text-align: left;
     padding: 900px;
   
-}
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
-    padding-right: 0px;
-    padding-left: 0px;
 }
 .img{
     padding: 0px;
@@ -102,13 +108,6 @@ border-radius: 3px;
 .contenedor .form .botonEnviar:hover{
     background-color: rgb(255, 42, 42);
 }
-.estrella{
-    margin-left: 200px;
-    margin-bottom: -19px;
-    height: 45px;
-    width: 45px;
-
-}
 .fotosRopa{
     width: 350px;
     height: 350px;
@@ -132,32 +131,7 @@ border-radius: 3px;
 .shoppingCartItemsContainer{
     padding: 20px;
 }
-/*prueba*/
-.item {
-    border: 2px solid #000;
-    padding: 10px;
-    border-radius: 20px;
-  }
-  
-  .item-title {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 600;
-  }
-  
 
-  .item-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0px 15px;
-  }
-  
-  .item-details > .item-price {
-    margin: 0;
-  }
-  
-  /* ? SHOPPING CART */
   .shopping-cart-items {
     padding: 20px 0px;
   }
@@ -179,4 +153,78 @@ border-radius: 3px;
   .shopping-cart-total {
     min-height: 96px;
   }
-  
+.switch{
+    background-color: #343D5b;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    &::after{
+        content:"";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        background: #f1f1f1;;
+        top: 0;
+        left: 0;
+        right: 0;
+        border-radius: 100px;
+        transition: 3s ease all;
+        box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+    }
+    &.active{
+        background-color: orange;
+        color: #000;
+        &::after{
+            right: 0;
+            left: unset;
+        }
+    }
+    .modoNocturno{
+     width: 30px;
+     height: 30px;
+     line-height: 30px;
+     display: block;
+     background: none;
+     color: #fff;   
+    }
+}
+.col-lg-4{
+    padding: 0px;
+    width: none;
+    position: none;
+
+}
+ .navbar{
+     body.dark &{
+         background: #222222 ;
+         box-shadow: 10px 10px 20px rgba(0, 0, 0, .16);
+         a{
+             color: #c8c8c8;
+             &:hover{
+                 color:#fff;
+             }
+         }
+     }
+ }
+
+ .zoom{
+    body.dark &{
+       
+        h4{
+            color: #c8c8c8;
+            &:hover{
+                color:#fff;
+            }
+        }
+        div{
+            color: #c8c8c8;
+            &hover{
+                color:#fff;
+            }
+        }
+    }
+ }
